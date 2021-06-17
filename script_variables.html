@@ -796,8 +796,13 @@
 <li><strong>{{agent.version}}</strong> - Tactical RMM agent version</li>
 <li><strong>{{agent.operating_system}}</strong> - Agent operating system example: <em>Windows 10 Pro, 64 bit (build 19042.928)</em></li>
 <li><strong>{{agent.plat}}</strong> - Will show the platform example: <em>windows</em></li>
+<li><strong>{{agent.plat_release}}</strong> - Will show the platform release</li>
 <li><strong>{{agent.hostname}}</strong> - The hostname of the agent</li>
+<li><strong>{{agent.local_ip}}</strong> - Local IP address of agent</li>
 <li><strong>{{agent.public_ip}}</strong> - Public IP address of agent</li>
+<li><strong>{{agent.agent_id}}</strong> - agent ID in database</li>
+<li><strong>{{agent.last_seen}}</strong> - Date and Time Agent last seen</li>
+<li><strong>{{agent.used_ram}}</strong> - Used RAM on agent. Returns an integer - example: <em>16</em> </li>
 <li><strong>{{agent.total_ram}}</strong> - Total RAM on agent. Returns an integer - example: <em>16</em> </li>
 <li><strong>{{agent.boot_time}}</strong> - Uptime of agent. Returns unix timestamp. example: <em>1619439603.0</em></li>
 <li><strong>{{agent.logged_in_username}}</strong> - Username of logged in user</li>
@@ -805,11 +810,20 @@
 <li><strong>{{agent.monitoring_type}}</strong> - Returns a string of <em>workstation</em> or <em>server</em></li>
 <li><strong>{{agent.description}}</strong> - Description of agent in dashboard</li>
 <li><strong>{{agent.mesh_node_id}}</strong> - The mesh node id used for linking the tactical agent to mesh.</li>
-<li><strong>{{agent.choco_installed}}</strong> - Boolean to see if Chocolatey is installed</li>
+<li><strong>{{agent.overdue_email_alert}}</strong> - Returns true if overdue email alerts is enabled in TRMM</li>
+<li><strong>{{agent.overdue_text_alert}}</strong> - Returns true if overdue SMS alerts is enabled in TRMM</li>
+<li><strong>{{agent.overdue_dashboard_alert}}</strong> - Returns true if overdue agent alerts is enabled in TRMM</li>
+<li><strong>{{agent.offline_time}}</strong> - Returns offline time setting for agent in TRMM</li>
+<li><strong>{{agent.overdue_time}}</strong> - Returns overdue time setting for agent in TRMM</li>
+<li><strong>{{agent.check_interval}}</strong> - Returns check interval time setting for agent in TRMM</li>
+<li><strong>{{agent.needs_reboot}}</strong> - Returns true if reboot is pending on agent</li>
+<li><strong>{{agent.choco_installed}}</strong> - Returns true if Chocolatey is installed</li>
 <li><strong>{{agent.patches_last_installed}}</strong> - The date that patches were last installed by Tactical RMM. </li>
 <li><strong>{{agent.needs_reboot}}</strong> - Returns true if the agent needs a reboot</li>
 <li><strong>{{agent.time_zone}}</strong> - Returns timezone configured on agent</li>
 <li><strong>{{agent.maintenance_mode}}</strong> - Returns true if agent is in maintenance mode</li>
+<li><strong>{{agent.block_policy_inheritance}}</strong> - Returns true if agent has block policy inheritance</li>
+<li><strong>{{agent.alert_template}</strong> - Returns true if agent has block policy inheritance</li>
 </ul>
 <h2 id="client">Client<a class="headerlink" href="#client" title="Permanent link">&para;</a></h2>
 <ul>
